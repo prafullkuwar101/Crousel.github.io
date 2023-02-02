@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <style>
+        .mainbody{
+            padding-left: 10%;
+            padding-right: 10%;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            background-color: rgb(52, 52, 52);
+        }
+        .heading{
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 3rem;
+            font-family: Arial, Helvetica, sans-serif;
+            border: 5px solid white;
+        }
+        img{
+            border: 5px solid white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Mainbody -->
+    <div class="mainbody">
+
+    <!-- Page Heading -->
+    <h1 class="heading">Image Slideshow</h1>
+
+    <!-- Carousel -->
+    <div class="carousel slide" id="demo" data-bs-ride="carousel">
+
+    <!--Carousel Indicators-->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+    
+    
+        <!-- Carousel Image Slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1500622944204-b135684e99fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bmF0dXJhbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60" alt="Slide1" class="d-block" style="width: 100%; height: 600px;">
+            </div>
+    
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/reserve/bOvf94dPRxWu0u3QsPjF_tree.jpg?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bmF0dXJhbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60" alt="Slide2" class="d-block" style="width: 100%; height: 600px;">
+            </div>
+    
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1546587348-d12660c30c50?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bmF0dXJhbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1000&q=60" alt="Slide3" class="d-block" style="width: 100%; height: 600px;">
+            </div>
+        </div>
+    
+        </div>
+    
+        <!-- Carousel Left and Right Controls -->
+        <button class="carousel-control-prev" type="button" data-slide="prev" data-bs-target="#demo">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-slide="next" data-bs-target="#demo">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+</body>
+</html>
